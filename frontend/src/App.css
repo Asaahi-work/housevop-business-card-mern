@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+text-align: center;
+background: #242B33;
+}
+
+/* header */
+header {
+  background: url("images/pic1.png") no-repeat;
+}
+
+
+.header-wrapper {    
+  margin: auto 0;
+  max-width: 1920px;
+  min-height: 840px;
+  text-align: center;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 5%;
+}
+
+li, a {
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 14px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  padding: 0px 20px;
+}
+
+a {
+    color: white;
+}
+
+.nav-logo {
+  font-family: 'Post No Bills Jaffna', sans-serif;
+  font-size: 36px;
+  color: white;
+}
+
+.header-btn {
+  border:#D4C17F solid 1px;
+  background: none;
+  width: 60px;
+  height: 45px;
+  color: white;
+  border-radius: 4px;
+
+}
+
+/* header */
+
+.header-title {
+  text-align: center;
+  font-family: 'Playfair Display', sans-serif;
+  color: #D4C17F;
+  font-size: 48px;
+  padding-top: 150px;
+}
+
+.transform-pic {
+  padding-top: 120px;
+}
+
+.address {
+  font-family: 'Playfair Display', sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+/* data container*/ 
+.data-container{
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  padding-left: 35%;
+}
+
+.right {
+  padding-right: 35%;
+}
+/* mobile nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #242B33;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  cursor: pointer;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-links,
+  .header-btn {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+/* main */
+
+.main-wrapper {
+margin: 0 auto;
+max-width: 1280px;
+}
+
+.main-pic {
+margin: 0 auto;
+max-width: 100%;
+}
+
+@media (max-width: 375px) {
+.main-pic {
+  max-width: 100%;
+  }
+.footer-nav-links {
+  max-width: 100%;
+}
+}
+
+/* merchants */
+
+.cond-container {
+margin:0 auto;
+width:100%;
+padding-top: 3rem;
+max-width: 1280px;
+}
+
+@media (max-width:1280px) {
+.cond-container {
+  max-width: 100%;
+}
+.flats-block {
+  max-width: 100%;
+}
+.feedback-wrapper {
+  max-width: 100%;
+}
+.feedback-container {
+  max-width: 100%;
+}
+.feedback-right-block {
+  max-width: 100%;
+}
+.footer-nav{
+  max-width: 100%;
+}
+.footer-nav-links {
+  max-width: 100%;
+}
+}
+
+@media (max-width:1920px) {
+.footer-wrapper {
+  max-width: 100%;
+}
+.footer-nav {
+  max-width: 100%;
+}
+}
+
+@media (max-width:535px) {
+.feedback-right-block {
+  max-width: 100%;
+}
+}
+
+
+@media (max-width:535px) {
+.frb-lb {
+  max-width: 100% !important;
+}
+.frb-rb {
+  max-width: 100% !important;
+}
+}
+
+.inline div {
+display:inline-block; 
+display: -moz-inline-stack;
+vertical-align:top;
+font-family: 'Playfair Display', sans-serif;
+font-size:16px; 
+}
+
+.cond-block {
+padding-left:5% ;
+padding-right:5% ;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+.cond-text {
+padding-top: 10px;
+font-size: 20px;
+color: white;
+font-weight: lighter;
+}
+
+/* title*/ 
+
+.title {
+font-family: 'Playfair Display', sans-serif;
+color: #D4C17F;
+font-size: 36px;
+text-align: left;
+padding-top: 70px;
+}
+
+/* flat block */
+
+.flats-block {
+margin:0 auto;
+width:100%;
+padding-top: 5rem;
+max-width: 1280px;
+}
+
+.inline-block div {
+display:inline-block; 
+vertical-align:top;
+}
+
+.left-block {
+padding-right: 30px;
+padding-left: 30px;
+}
+
+.right-block {
+padding-right: 30px;
+padding-left: 30px;
+}
+
+/* feedback */
+
+.feedback-wrapper {
+background: url("images/pic11.png") no-repeat;
+margin: auto 0;
+max-width: 1920px;
+min-height: 560px;
+padding-top: 10rem;
+text-align: center;
+}
+
+.feedback-container {
+margin:0 auto;
+width:100%;
+max-width: 1280px;
+}
+
+.feedback-left-block {
+max-width: 535px;
+float: left;
+
+}
+
+.flb-text {
+text-align: left;
+font-family: 'Playfair Display', sans-serif;
+color: #D4C17F;
+font-size: 36px;
+}
+
+.flb-text-s {
+padding-top: 2rem;
+text-align: left;
+color:white;
+font-size: 16px;
+font-family: 'Playfair Display', sans-serif;
+}
+
+
+
+
+.feedback-right-block {
+float: right;
+max-width: 535px;
+margin:0 auto;
+max-width: 535px;
+}
+
+.frb-lb {
+padding-top: 40px;
+max-width: 255px;
+white-space: normal;	
+display: inline-block;
+vertical-align: top;
+}
+
+.frb-lb-input {
+width: 255px;
+height: 50px;
+opacity: 0.2;
+font-size: 14px;
+background: #ffffff;
+color: #bebebe;
+border: none;
+text-align: center;
+}
+
+.frb-rb-input {
+width: 255px;
+height: 50px;
+opacity: 0.2;
+font-size: 14px;
+background: #ffffff;
+color: #bebebe;
+border: none;
+text-align: center;
+}
+
+.frb-lb-text {
+font-size: 13px;
+color: white;
+padding-top: 2.5rem;
+font-family: 'Playfair Display', sans-serif;
+}
+
+.frb-rb {
+padding-top: 40px;
+max-width: 255px;
+white-space: normal;	
+display: inline-block;
+vertical-align: top;
+}
+
+.frb-rb-btn {
+background: #D4C17F;
+width: 255px;
+height: 50px;
+font-size: 16px;
+color: white;
+border: none;
+text-align: center;
+}
+
+.map {
+max-width: 1280px;
+height: 358px;
+background-color: #626262;
+}
+
+/* footer */
+
+footer {
+margin-top: 180px;
+background-color: #2D343C;
+max-width: 1920px;
+}
+
+.footer-wrapper {
+margin: 0 auto;
+max-width: 1280px;
+min-height: 100px;
+
+
+}
+
+.footer-nav-links {
+margin:0 auto;
+width:100%;
+padding-top: 3rem;
+max-width: 1280px;
+}
+
+.footer-nav-links div{
+padding-right: 15px;
+padding-left: 15px;
+}
+
+.f-nav-logo {
+font-family: Post No Bills Jaffna SemiBold;
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+color: white;
+}
+
+.f-nav-text {
+font-size: 14px;
+color: white;
+padding-top: 1rem;
+text-align: left;
+}
